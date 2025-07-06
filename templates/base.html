@@ -20,6 +20,17 @@
         background-repeat: no-repeat;
     }
 
+    .blog-title {
+        position: absolute;
+        left: 10%; /* adjust horizontal placement */
+        top: 50%; /* vertical center */
+        transform: translateY(-50%);
+        font-size: 48px; /* adjust size as desired */
+        color: white;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
     h1, h2, h3 {
         font-family: 'Times New Roman', Times, serif;
         margin-bottom: 20px;
@@ -58,7 +69,9 @@
         <a href="/post/second-post">Second Post</a>
     </nav>
 
-    <div class="hero-image" style="background-image: url('{{ url_for('static', filename='earth.jpg') }}');"></div>
+    <div class="hero-image" style="background-image: url('{{ url_for('static', filename='earth.jpg') }}');">
+        <div class="blog-title">The 'I' Paradox</div>
+    </div>
 
 
     {% block content %}
