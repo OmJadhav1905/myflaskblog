@@ -3,6 +3,9 @@
 <head>
     <title>{% block title %}The 'I' Paradox Blog{% endblock %}</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
     <style>
 
   * {
@@ -15,7 +18,7 @@
         background-color: #3a3a3a; /* light grey */
         color: #ffffff; /* near black text */
         font-family: Calibri, sans-serif;
-        padding: 20px 20px;
+        padding: 0px 0px;
     }
 
     .hero-image {
@@ -97,7 +100,7 @@
     display: flex;
     justify-content: space-between; /* evenly distributes links */
     flex: 1; /* allows links container to take remaining space */
-    margin-left: 150px; /* space between brand and first link */
+    margin-left: 350px; /* space between brand and first link */
 }
 
 .navbar-links a {
@@ -108,6 +111,17 @@
     transition: transform 0.2s ease;
 }
 
+.site-footer a i {
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.site-footer a i:hover {
+    color: #22b9df;
+}
+
+
     </style>
 </head>
 <body>
@@ -116,7 +130,7 @@
         <div class="navbar-links">
             <a href="/">Home</a>
             <a href="/about">About</a>
-            <a href="/posts">Posts</a>
+            <a href="/blog">Blog</a>
         </div>
     </nav>
 
@@ -128,5 +142,12 @@
 
     {% block content %}
     {% endblock %}
+
+    <footer class="site-footer">
+        <a href="https://twitter.com/YourTwitterHandle" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+    </footer>
+    
 </body>
 </html>
