@@ -18,6 +18,11 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column; /* stack children vertically */
+        justify-content: center; /* vertical center */
+        align-items: flex-start; /* align items to left */
+        padding-left: 10%; /* adjust left padding for position */
     }
 
     .hero-content {
@@ -41,7 +46,7 @@
         margin-top: 10px;
         font-family: Calibri, sans-serif;
     }
-    
+
     h1, h2, h3 {
         font-family: Calibri, sans-serif;
         margin-bottom: 20px;
