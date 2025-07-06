@@ -22,17 +22,17 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/post1')
-def post1():
-    return render_template('post1.html')
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
 
-@app.route('/post/<post_name>')
-def post(post_name):
-    post = posts.get(post_name)
-    if post:
-        return render_template('post.html', post=post)
+@app.route('/blog/<blog_name>')
+def blog(blog_name):
+    blog = blogs.get(blog_name)
+    if blog:
+        return render_template('blog.html', blog=blog)
     else:
-        return "Post not found", 404
+        return "Blog not found", 404
 
 if __name__ == "__main__":
     app.run(debug=True)
