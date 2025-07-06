@@ -12,9 +12,10 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/blog')
-def blog():
-    return render_template('blog.html')
+@app.route('/blog/<int:id>')
+def blog(id):
+    blog = Blog.query.get_or_404(id)
+    return render_template('blog.html', blog=blog)
 
 
 if __name__ == "__main__":
