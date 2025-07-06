@@ -8,45 +8,63 @@
     <p style="margin-top: -10px;">Existence is the answer, What is the question?</p>
 
     <h2>The Biggest</h2>
-    <ul>
+    <h2 onclick="toggle('biggest')">The Biggest</h2>
+    <ul id="biggest" style="display: none;">
       <li>What is Physics?</li>
       <!-- Add more questions here -->
     </ul>
 
     <h2>Mind</h2>
-    <ul>
+    <h2 onclick="toggle('mind')">Mind</h2>
+    <ul id="mind" style="display: none;">
       <li>What exactly is there behind my eyes?</li>
       <!-- Add more questions here -->
     </ul>
 
     <h2>Nature</h2>
-    <ul>
+    <h2 onclick="toggle('nature')">Nature</h2>
+    <ul id="nature" style="display: none;">
       <li>Why did nature create us?</li>
       <!-- Add more questions here -->
     </ul>
 
     <h2>Universe</h2>
-    <ul>
+    <h2 onclick="toggle('universe')">Universe</h2>
+    <ul id="universe" style="display: none;">
       <li>How much is out there?</li>
       <!-- Add more questions here -->
     </ul>
 
     <h2>Humans</h2>
-    <ul>
+    <h2 onclick="toggle('humans')">Humans</h2>
+    <ul id="humans" style="display: none;">
       <li>Who are we without other humans?</li>
       <!-- Add more questions here -->
     </ul>
 
     <h2>Aliens</h2>
-    <ul>
+    <h2 onclick="toggle('aliens')">Aliens</h2>
+    <ul id="aliens" style="display: none;">
       <li>How many are out there?</li>
       <!-- Add more questions here -->
     </ul>
 
     <h2>Death</h2>
-    <ul>
+    <h2 onclick="toggle('death')">Death</h2>
+    <ul id="death" style="display: none;">
       <li>Should we be afraid or curious about it?</li>
       <!-- Add more questions here -->
     </ul>
   </div>
+
+  <script>
+    function toggle(id) {
+      var el = document.getElementById(id);
+      if (el.style.display === "none") {
+        el.style.display = "block";
+      } else {
+        el.style.display = "none";
+      }
+    }
+  </script>
 {% endblock %}
