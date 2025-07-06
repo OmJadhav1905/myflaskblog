@@ -22,7 +22,7 @@
         flex-direction: column; /* stack children vertically */
         justify-content: center; /* vertical center */
         align-items: flex-start; /* align items to left */
-        padding-left: 10%; /* adjust left padding for position */
+        padding-left: 0%; /* adjust left padding for position */
     }
 
     .hero-content {
@@ -36,7 +36,7 @@
         left: 10%; /* adjust horizontal placement */
         top: 50%; /* vertical center */
         transform: translateY(-50%);
-        font-size: 48px; /* adjust size as desired */
+        font-size: 55px; /* adjust size as desired */
         color: white;
         font-weight: bold;
         font-family: Calibri, sans-serif;
@@ -71,6 +71,37 @@
         padding: 30px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818; /* slightly darker than body background */
+    padding: 10px 20%;
+}
+
+.navbar-brand {
+    font-size: 34px;
+    color: #1585a1; /* distinct light blue for your name */
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between; /* evenly distributes links */
+    flex: 1; /* allows links container to take remaining space */
+    margin-left: 50px; /* space between brand and first link */
+}
+
+.navbar-links a {
+    color: #ffffff;
+    margin-left: 50px; /* space out links evenly */
+    text-decoration: none;
+    font-size: 32px;
+    transition: transform 0.2s ease;
+}
+
     </style>
 </head>
 <body>
