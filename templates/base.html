@@ -74,11 +74,13 @@
     </style>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/about">About</a> |
-        <a href="/post/first-post">First Post</a> |
-        <a href="/post/second-post">Second Post</a>
+    <nav class="navbar">
+        <div class="navbar-brand">Om Jadhav</div>
+        <div class="navbar-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/posts">Posts</a>
+        </div>
     </nav>
 
     <div class="hero-image" style="background-image: url('{{ url_for('static', filename='earth.jpg') }}');">
