@@ -50,6 +50,10 @@
         <a href="/post/second-post">Second Post</a>
     </nav>
 
+    <div style="text-align: center; padding: 20px 0;">
+        <img src="{{ url_for('static', filename='earth.jpg') }}" alt="Earth" style="max-width: 200px; height: auto;">
+    </div>
+
     {% block content %}
     {% endblock %}
 </body>
