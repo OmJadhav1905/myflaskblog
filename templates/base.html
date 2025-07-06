@@ -15,7 +15,6 @@
     .hero-image {
         width: 100%;
         height: 300px; /* adjust as desired */
-        background-image: url('{{ url_for('static', filename='earth.jpg') }}');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -59,7 +58,8 @@
         <a href="/post/second-post">Second Post</a>
     </nav>
 
-    <div class="hero-image"></div>
+    <div class="hero-image" style="background-image: url('{{ url_for('static', filename='earth.jpg') }}');"></div>
+
 
     {% block content %}
     {% endblock %}
