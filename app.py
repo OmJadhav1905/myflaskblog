@@ -16,6 +16,9 @@ def about():
 def blog():
     return render_template('blog.html')
 
+@app.route('/questions')
+def questions():
+    return render_template('questions.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
