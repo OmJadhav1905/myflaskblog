@@ -12,6 +12,15 @@
         padding: 40px 20px;
     }
 
+    .hero-image {
+        width: 100%;
+        height: 300px; /* adjust as desired */
+        background-image: url('{{ url_for('static', filename='earth.jpg') }}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     h1, h2, h3 {
         font-family: 'Times New Roman', Times, serif;
         margin-bottom: 20px;
@@ -50,9 +59,7 @@
         <a href="/post/second-post">Second Post</a>
     </nav>
 
-    <div style="text-align: center; padding: 20px 0;">
-        <img src="{{ url_for('static', filename='earth.jpg') }}" alt="Earth" style="max-width: 200px; height: auto;">
-    </div>
+    <div class="hero-image"></div>
 
     {% block content %}
     {% endblock %}
