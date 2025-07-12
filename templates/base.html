@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>{% block title %}The 'I' Paradox Blog{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
@@ -14,8 +16,8 @@
     }
 
         body {
-        background-color: #000000; /* light grey */
-        color: #ffffff; /* near black text */
+        background-color: #000000; 
+        color: #ffffff; 
         font-family: Calibri, sans-serif;
         padding: 0px 0px;
     }
@@ -65,7 +67,7 @@
     }
 
     a {
-        color: #ffffff; /* black links */
+        color: #ffffff; 
         text-decoration: none;
     }
 
@@ -82,8 +84,8 @@
 
     .container {
         max-width: 5000px;
-        margin-top: 598px;
-        background-color: #000000; /* white content container */
+        margin-top: 800px;
+        background-color: #000000; 
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         
         
@@ -92,9 +94,9 @@
  
     .questions-page {
   margin-left: 20px;
-  margin-top: 600px;
+  margin-top: 850px;
   position: fixed;
-  z-index: 0;
+  z-index: 1;
 }
 
 .questions-page h1 {
@@ -224,18 +226,18 @@
 
       
     <div class="questions-page">
-      </div>
+    </div>
 
     {% block content %}
     {% endblock %}
 
     <footer>
         <a href="https://twitter.com/@OmJadha98873753" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" viewBox="0 0 24 24">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff" viewBox="0 0 24 24">
             <path d="M22.162 0H1.837C.823 0 0 .823 0 1.837v20.325C0 23.177.823 24 1.837 24h20.325c1.014 0 1.837-.823 1.837-1.838V1.837C24 .823 23.177 0 22.162 0zM18.025 19.25h-2.078l-3.843-5.5-3.846 5.5H6.181l5.016-7.172L6.334 4.75h2.078l3.371 4.821 3.374-4.821h2.052l-4.836 7.328 5.632 7.172z"/>
           </svg>
         </a>
-      </footer>
+    </footer>
       
     
 </body>
