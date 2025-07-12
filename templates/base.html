@@ -85,14 +85,16 @@
         margin-top: 598px;
         background-color: #000000; /* white content container */
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        position: fixed;
-        z-index: 0;
+        
+        
 
     }
  
     .questions-page {
   margin-left: 20px;
   margin-top: 600px;
+  position: fixed;
+  z-index: 0;
 }
 
 .questions-page h1 {
@@ -220,14 +222,10 @@
 
     <div class="blog-title">The 'I' Paradox</div>
 
-    <div class="container">
-
-        <div class="questions-page">
+      
+    <div class="questions-page">
       </div>
-        
-      </div>      
-     
-    
+
     {% block content %}
     {% endblock %}
 
