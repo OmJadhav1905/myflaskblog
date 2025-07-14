@@ -3,60 +3,59 @@
 {% block title %}Questions - The 'I' Paradox{% endblock %}
 
 {% block content %}
-  <div class="questions-page">
+<div class="questions-page">
     <h1>QUESTIONS</h1>
     <p class="tagline">EXISTENCE IS THE ANSWER, WHAT ARE THE QUESTIONS?</p>
 
     <h2 onclick="toggle('biggest')">Biggest</h2>
     <ul id="biggest" style="display: none;">
-      <li>What is Physics?</li>
+        <li>What is Physics?</li>
     </ul>
 
     <h2 onclick="toggle('mind')">Mind</h2>
     <ul id="mind" style="display: none;">
-      <li>What exactly is there behind my eyes?</li>
+        <li>What exactly is there behind my eyes?</li>
     </ul>
 
     <h2 onclick="toggle('nature')">Nature</h2>
     <ul id="nature" style="display: none;">
-      <li>Why did nature create us?</li>
+        <li>Why did nature create us?</li>
     </ul>
 
     <h2 onclick="toggle('universe')">Universe</h2>
     <ul id="universe" style="display: none;">
-      <li>How much is out there?</li>
+        <li>How much is out there?</li>
     </ul>
 
     <h2 onclick="toggle('humans')">Humans</h2>
     <ul id="humans" style="display: none;">
-      <li>Who are we without other humans?</li>
+        <li>Who are we without other humans?</li>
     </ul>
 
     <h2 onclick="toggle('aliens')">Aliens</h2>
     <ul id="aliens" style="display: none;">
-      <li>How many are out there?</li>
+        <li>How many are out there?</li>
     </ul>
 
     <h2 onclick="toggle('parents')">Parents</h2>
     <ul id="parents" style="display: none;">
-      <li>From a cosmic perspective, who are they really?</li>
+        <li>From a cosmic perspective, who are they really?</li>
     </ul>
-
 
     <h2 onclick="toggle('death')">Death</h2>
     <ul id="death" style="display: none;">
-      <li>Should we be afraid or curious about it?</li>
+        <li>Should we be afraid or curious about it?</li>
     </ul>
-  </div>
+</div>
 
-  <script>
-    function toggle(id) {
-      var el = document.getElementById(id);
-      if (el.style.display === "none") {
+<script>
+function toggle(id) {
+    var el = document.getElementById(id);
+    if (el.style.display === "none") {
         el.style.display = "block";
-      } else {
+    } else {
         el.style.display = "none";
-      }
     }
-  </script>
+}
+</script>
 {% endblock %}
